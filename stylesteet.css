@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    width: 100%;
+    max-height: 25vh;
+   
+}
+
+
+.margin-rl{ margin: 0 20px;}
+
+
+.mar-top{ margin-top: 20px; }
+
+.button{
+    padding: 10px 10px;
+    width: 30%;
+    color: black;
+    background-color: skyblue;
+}
+
+.paraent-container{
+    box-sizing: border-box;
+    height: 100vh;
+  
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr 1fr 1fr .5fr; 
+    grid-auto-flow: 1fr;
+   /* grid-template-rows: 15em 25em 15em 3px 30px 1fr 1.5fr 3px 30px 40px 1fr 3px 30px 1fr 1fr 30px 3px 30px 1fr 20px 40px 20px 30px 30px;*/
+    grid-template-areas: "logo banner banner banner banner banner"
+                          "mu banner banner banner banner banner"
+                          "mu . wt wt wt ."
+                          "mu . at at at ."
+                          "mu . bt . . ."
+                          "mu . pf1 pf2 pf3 ."
+                          "mu . ar ar arimg ."
+                          "mu . sr sr sr ."
+                          "mu . srbt . . ."
+                          "mu . sc1 sc2 sc3 ."
+                          "mu . ar1 ar1 ar1img ."
+                          "mu . pf pf pf ."
+                          "mu . pfbt . . ."
+                          "mu . b1 b2 b3 ."                          
+                          "mu . b4 b5 b6 ."
+                          "mu . . lm . . "
+                          "mu . ct ct ct."
+                          "mu . ctbt . . ."
+                          "mu . gmap gmap gmap ."
+                          "mu . name email sub ."
+                          "mu . msg msg msg ."
+                          "mu . bt1 . . ."
+                          "mu . footericon footericon footericon ."
+                          "mu . copyrite copyrite copyrite .";
+   
+
+                        }                       
+                                       
+
+
+
+.logo{
+    grid-area: logo;
+    background-color: gray;
+    padding-top: 30px;
+    
+}
+
+    .menu{
+        grid-area: mu;
+        background-color: gray;
+       min-height: 100vh;
+       position: sticky;
+        right: 10px;
+       z-index: 99999;
+
+    }   
+
+    .burgericon{
+        display: none;
+
+    }
+
+    .menu li{
+        list-style: none;
+        
+        padding: 20px 0;
+        
+        text-align: center;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        box-shadow: 2px 2PX 2px whitesmoke;
+     
+        
+        
+    }
+    .menu li a{
+        
+        text-decoration: none;
+             
+      color: whitesmoke;
+      
+    
+        
+       
+    }
+    .banner{
+        background-image: url("images/BG1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: greenyellow;
+        text-align: center;
+        font-size: large;
+        
+                grid-area: banner;
+    }
+
+    .bannertxt{
+        position: relative;
+        top: 10px;
+        
+
+    }
+    
+    .welcome-txt{
+        grid-area: wt;
+    }
+    .welcome-txt h1{
+        color:skyblue;
+    }
+    .atpipe{
+        grid-area: at;
+        background-color: orange;
+        padding: 2px;
+    }
+    .bt{
+        grid-area: bt;
+        background-color: orange;
+     
+       
+    }
+    .pf1{
+        grid-area: pf1;
+        
+    }
+    .pf2{
+        grid-area: pf2;
+        
+
+    }
+    .profile h1{
+        color: orange;
+        text-align: center;
+    }
+    .profile h4{
+        text-align: center;
+
+    }
+      
+    
+    .pf3{
+        grid-area: pf3;
+      
+    }
+   
+    .article{
+        grid-area: ar;
+       
+    }
+    .article-img{
+        grid-area: arimg;
+        
+    }
+     .article h1{
+
+        
+        color: orange;
+    }
+   
+    .srpipe{
+        grid-area: sr;
+        background-color: rgb(76, 0, 255);
+        padding: 2px;
+    }
+    .srbt{
+        grid-area: srbt;
+        background-color: rgb(76, 0, 255);
+        padding: 10px 10px;
+        width: 30%;
+        color: white;
+        
+    }
+    .service-cont1{
+        grid-area: sc1;
+        background-color: rgb(76, 0, 255);
+        padding:20px;
+        text-align: center;
+        text-transform: capitalize;
+        color: white;
+        box-shadow: 2px 2px 2px black;
+    }
+    .service-cont2{
+        grid-area: sc2;
+        background-color: rgb(76, 0, 255);
+        padding:20px;
+       text-align: center;
+       text-transform: capitalize;
+       color: white;
+       box-shadow: 2px 2px 2px black;
+    }
+
+    .service-cont3{
+        grid-area: sc3;
+        background-color: rgb(76, 0, 255);
+        padding:20px;
+        text-transform: capitalize;
+        color: white;
+        box-shadow: 2px 2px 2px black;
+       
+    }
+
+    .articale1{
+        grid-area: ar1;
+    }
+    
+
+    .articale1-img{
+        grid-area: ar1img;
+    }
+    .pf-pipe{
+       
+        grid-area: pf;
+        background-color: green;
+        padding: 2px;
+    }
+    .pf-bt{
+        grid-area: pfbt;
+        background-color: green;
+        padding: 10px 10px;
+        width: 30%;
+        color: white;
+
+    }
+    .box1{
+        grid-area: b1;
+    }
+    .box2{
+        grid-area: b2;
+    }
+
+    .box3{
+        grid-area: b3;
+    }
+
+    .box4{
+        grid-area: b4;
+    }
+
+    .box5{
+        grid-area: b5;
+    }
+
+    .box6{
+        grid-area: b6;
+    }
+    .bt1{
+        grid-area: lm;
+    text-align: center;
+     padding: 5px 0;   
+    background-color: green;
+    color: whitesmoke;
+    }
+
+    .box h4{
+
+        color: green;
+        text-align: center;
+    }
+.ct-pipe{
+    grid-area: ct;
+    background-color: pink;
+        padding: 2px;
+
+}
+.ct-bt{
+    grid-area: ctbt;
+    background-color: pink;
+        padding: 10px 10px;
+        width: 40%;
+        color: gray; 
+}
+.gmap{
+    grid-area: gmap;
+    background-image: url(images/googl_ED.jpg);
+    background-size: cover;
+    height: 40vh;
+    
+    
+}
+.msgbox{
+    background-color: whitesmoke;
+   padding: 10px;
+  align-items: center;
+  width: 40%;
+    position: relative;
+    left: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    
+
+}
+   
+.name{
+
+    grid-area: name;
+
+}
+.email{
+
+    grid-area: email;
+}
+.subject{
+
+    grid-area: sub;
+}
+.message{
+
+    grid-area: msg; 
+    
+}
+.bt2{
+
+    grid-area: bt1;
+    width: 50%;
+    background-color: pink;
+    color: gray;    
+    font-weight: bold;
+
+}
+
+textarea{
+    width: 100%;
+    padding: 40px 0;
+}
+
+input{
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.fotter-icon{
+  
+    grid-area: footericon;
+    background-color: gray;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.fottercpy{
+    
+    grid-area: copyrite; 
+    background-color: black;
+    width: 100%;
+    padding: 40px 0;
+    color: white;
+  text-align: center;
+    
+}
+
+.fa-brands{
+    color: white;
+    padding: 15px 5px;
+   
+    background-color: black;
+}
+
+
+
+
+      
+
+    
+      
+    
+
