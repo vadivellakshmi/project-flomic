@@ -71,37 +71,39 @@ img{
     .menu{
         grid-area: mu;
         background-color: gray;
-       min-height: 100vh;
-       position: sticky;
-        right: 10px;
-       z-index: 99999;
+    
+        width: 100%;
 
     }   
 
     .burgericon{
         display: none;
+        
+
 
     }
 
     .menu li{
         list-style: none;
-        
+      
         padding: 20px 0;
-        
+             
         text-align: center;
-        width: 100%;
+        
         border: 1px solid black;
         border-radius: 10px;
-        background-color: black;
+      
         box-shadow: 2px 2PX 2px whitesmoke;
-     
-        
-        
+           
+               
+    }
+    .menu li:hover{
+        background-color: black;
     }
     .menu li a{
         
         text-decoration: none;
-             
+        
       color: whitesmoke;
       
     
@@ -112,6 +114,7 @@ img{
         background-image: url("images/BG1.jpg");
         background-repeat: no-repeat;
         background-position: center;
+        height: 40vh;
         background-size: cover;
         background-color: greenyellow;
         text-align: center;
@@ -218,6 +221,7 @@ img{
         grid-area: sc3;
         background-color: rgb(76, 0, 255);
         padding:20px;
+        text-align: center;
         text-transform: capitalize;
         color: white;
         box-shadow: 2px 2px 2px black;
