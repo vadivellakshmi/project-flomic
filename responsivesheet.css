@@ -79,7 +79,7 @@
         .container{
             box-sizing: border-box;
              width: 100%;          
-           
+            padding: 0 20px;
              display: grid;
 
            grid-template-columns: auto;
@@ -124,8 +124,17 @@
 
                                
 
-                                }
-
+                                                       .msgbox{
+                                    background-color: rgba(255, 255, 255, 0.5);
+                                   
+                                  align-items: center;
+                                  width: 70%;
+                                   position: static;
+                                    border-radius: 20px;
+                                    box-shadow: 2px 2px 2px black;                               
+                           
+                                
+}
                                    
                                    
                            
