@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 img{
     width: 100%;
@@ -22,39 +22,69 @@ img{
     background-color: skyblue;
 }
 
+
 .paraent-container{
-    box-sizing: border-box;
+    width: 25%;
     height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    
+    background-color: gray;
+
+    
+}
+
+.main-container{
+
+    width: 75%;
+    
+    margin-left: 25%;
+   
+ 
+   
+}
+
+
+    
+.container{
+    
   
+    
+  
+   
+    padding: 0 50px;
+    
     display: grid;
-    grid-template-columns: 1fr .5fr 1fr 1fr 1fr .5fr; 
+    grid-template-columns:  1fr 1fr 1fr;
     grid-auto-flow: 1fr;
    /* grid-template-rows: 15em 25em 15em 3px 30px 1fr 1.5fr 3px 30px 40px 1fr 3px 30px 1fr 1fr 30px 3px 30px 1fr 20px 40px 20px 30px 30px;*/
-    grid-template-areas: "logo banner banner banner banner banner"
-                          "mu banner banner banner banner banner"
-                          "mu . wt wt wt ."
-                          "mu . at at at ."
-                          "mu . bt . . ."
-                          "mu . pf1 pf2 pf3 ."
-                          "mu . ar ar arimg ."
-                          "mu . sr sr sr ."
-                          "mu . srbt . . ."
-                          "mu . sc1 sc2 sc3 ."
-                          "mu . ar1 ar1 ar1img ."
-                          "mu . pf pf pf ."
-                          "mu . pfbt . . ."
-                          "mu . b1 b2 b3 ."                          
-                          "mu . b4 b5 b6 ."
-                          "mu . . lm . . "
-                          "mu . ct ct ct."
-                          "mu . ctbt . . ."
-                          "mu . gmap gmap gmap ."
-                          "mu . name email sub ."
-                          "mu . msg msg msg ."
-                          "mu . bt1 . . ."
-                          "mu . footericon footericon footericon ."
-                          "mu . copyrite copyrite copyrite .";
-   
+   grid-template-areas: 
+                           "wt wt wt"
+                          " at at at"
+                          " bt . . "
+                          "pf1 pf2 pf3"
+                          " ar ar arimg"
+                          " sr sr sr"
+                          " srbt . ."
+                          "sc1 sc2 sc3"
+                          "ar1 ar1 ar1img"
+                          "pf pf pf"
+                          "pfbt . ."
+                          "b1 b2 b3"                          
+                          "b4 b5 b6"
+                          ". lm ."
+                          "ct ct ct"
+                          "ctbt . ."
+                          "gmap gmap gmap"
+                          "name email sub"
+                          "msg msg msg"
+                          "bt1 . ."
+                          "footericon footericon footericon"
+                          "copyrite copyrite copyrite";
+
+                                                                    
+                           
 
                         }                       
                                        
@@ -114,21 +144,26 @@ img{
         background-image: url("images/BG1.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        height: 40vh;
+        height: 60vh;
         background-size: cover;
         background-color: greenyellow;
         text-align: center;
         font-size: large;
+        width: 100%;
         
                 grid-area: banner;
     }
 
-    .bannertxt{
-        position: relative;
-        top: 10px;
+    .banner h1{
+
+        padding-top: 50px;
+        
+        
         
 
     }
+
+ 
     
     .welcome-txt{
         grid-area: wt;
