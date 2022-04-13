@@ -58,7 +58,11 @@
             position: sticky;
             top: 0;
 
-            z-index: 9999;
+           
+        }
+       .main-container{
+
+            position: static;
         }
             .logo
             {padding-top: 0;}
