@@ -36,7 +36,9 @@ img{
 
     width: 75%;
     
-    margin-left: 25%;
+position: absolute;
+        
+    left: 25%;
    
  
    
