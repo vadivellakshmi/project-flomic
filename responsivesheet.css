@@ -25,13 +25,7 @@
         margin: auto;
        }
 
-       .paraent-container{
-
-        position: static;
-        width: 100%;
-        height: auto;
-        
-       }
+    
 
        .main-container{ width: 100%;
     
@@ -59,6 +53,8 @@
         }
 
         .paraent-container{
+              width: 100%;
+        height: auto;
             position: sticky;
             top: 0;
 
